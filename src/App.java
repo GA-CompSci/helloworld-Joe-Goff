@@ -26,5 +26,26 @@ public class App {
         // SHORT CIRCUIT
         int divisor = 0;
         if(divisor !=0 && 5/divisor > 1 ) System.out.println("omg");
+        //ARRAYS
+        int n, m, u, i = 0; // multi-declaration
+        n = 0;
+        m = 0;
+        u = 0;
+        int[] arr = {n, m, u, i}; // copies, not links to the values
+        n = 5;
+        System.out.println(arr[0]);
+        System.out.println(n);
+        arr[0] = 5; // I'd have to do that to change the array's value
+        System.out.println("The array is " + arr.length + "items long");
+
+        // FUNCTIONS / METHODS
+        System.out.println(addYaBoi("I do my homework"));
+
+    } // closes the main method
+
+    public static String addYaBoi(String str){
+        return str + " yaboi";
+
     }
-}
+
+} // closes the app class
